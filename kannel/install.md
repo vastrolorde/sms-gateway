@@ -10,4 +10,5 @@ sudo chown kannel -R /var/lib/kannel/
 ```
 
 Uncomment START_SMSBOX=1 on /etc/default/kannel
+
 Config [/etc/kannel/kannel.conf](kannel.conf)
