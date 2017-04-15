@@ -1,0 +1,9 @@
+# ZTE MF193
+SUBSYSTEM=="tty", ATTRS{bInterfaceNumber}!="01", GOTO="zte0end"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="19d2", ATTRS{idProduct}=="2003", ATTRS{serial}=="MF1930ZTED010000", SYMLINK+="gsm-modem-zte0"
+LABEL="zte0end"
+
+# Huawei E226 
+SUBSYSTEM=="tty", ATTRS{bInterfaceNumber}!="00", GOTO="huawei0end"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1001", ENV{ID_USB_INTERFACE_NUM}=="00", SYMLINK+="gsm-modem-huawei0"
+LABEL="huawei0end"
