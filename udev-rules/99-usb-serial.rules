@@ -5,5 +5,5 @@ LABEL="zte0end"
 
 # Huawei E226 
 SUBSYSTEM=="tty", ATTRS{bInterfaceNumber}!="00", GOTO="huawei0end"
-SUBSYSTEM=="tty", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1001", ENV{ID_USB_INTERFACE_NUM}=="00", SYMLINK+="gsm-modem-huawei0"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1001", SYMLINK+="gsm-modem-huawei0"
 LABEL="huawei0end"
